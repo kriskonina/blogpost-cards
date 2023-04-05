@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>Canonical cards</title>
+
+</head>
+    <body>
+        <main>
+            <div class="row"></div>
+        </main>
+
+        <template>
+            <div>
+                <div class="col-4 col-medium-2 blog-post">
+                    <header class="blog-post__header">
+                        <h5 class="p-muted-heading u-no-padding--top">{{ topics }} </h5>
+                    </header>
+                    <div class="blog-post__body">
+                        <div class="u-crop--16-9">
+                            <img alt="" height="311" width="555" loading="lazy" src="{{ featured_media }}">
+                        </div>
+                        <h3 class="p-heading--3">
+                            <a href="{{ link }}">{{ title }}</a>
+                        </h3>
+                        <p class="u-no-margin--bottom">
+                            <em>By <a href="{{ authorLink }}">{{ authorName }}</a> on {{ date }}</em>
+                        </p>
+                    </div>
+                    <p class="blog-post__footer">
+                        {{ categories }}
+                    </p>
+                </div>
+            </div>
+        </template>
+
+        <script src="src/index.js"></script>
+
+    </body>
+</html>

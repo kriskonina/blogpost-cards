@@ -1,0 +1,12 @@
+{
+    "name": "cards-canonical",
+    "version": "0.1.0",
+    "scripts": {
+        "build-css": "sass -w --load-path=node_modules src:dist --style=compressed",
+        "serve": "yarn build-css && sass --load-path=node_modules -w src:dist --style=compressed"
+    },
+    "devDependencies": {
+        "sass": "^1.60.0",
+        "vanilla-framework": "^3.13.0"
+    }
+}
